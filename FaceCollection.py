@@ -48,7 +48,7 @@ while True:
     else:
         print('Face not found')
         pass
-    if cv2.waitKey(1)==13 or count ==100: #13 ascii of enter
+    if cv2.waitKey(1)==13 or count ==200: #13 ascii of enter
         break
 capture.release()
 cv2.destroyAllWindows()

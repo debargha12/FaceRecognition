@@ -31,14 +31,14 @@ while True:
         cv2.putText(image, displayString,(100,120),cv2.FONT_HERSHEY_COMPLEX,1,(250,120,255),2)
 
         if confidence >75:
-            cv2.putText(image, "Match ", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)
+            cv2.putText(image, "Face Matching ", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)
             cv2.imshow('Face Cropper', image)
         else:
-            cv2.putText(image, "No Match ", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
+            cv2.putText(image, "Face not Matching ", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
             cv2.imshow('Face Cropper', image)
 
     except:#no face in screen
-        cv2.putText(image, "Face Not Found ", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 0, 0), 2)
+        cv2.putText(image, "No Face Found ", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 0, 0), 2)
         #cv2.putText(image, "No Match ", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
         cv2.imshow('Face Cropper', image)
         pass
